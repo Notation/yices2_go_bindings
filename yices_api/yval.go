@@ -1,15 +1,17 @@
 package yices2
 
-type Yval_tag_t int32
+// YvalTagT is the go version of the yval_tag_t enum
+type YvalTagT int32
 
+// The corresponding element of the YvalTagT enum
 const (
-	YVAL_UNKNOWN Yval_tag_t = iota
-	YVAL_BOOL
-	YVAL_RATIONAL
-	YVAL_ALGEBRAIC
-	YVAL_BV
-	YVAL_SCALAR
-	YVAL_TUPLE
-	YVAL_FUNCTION
-	YVAL_MAPPING
+	YvalUnknown YvalTagT = iota
+	YvalBool
+	YvalRational
+	YvalAlgebraic
+	YvalBv
+	YvalScalar
+	YvalTuple
+	YvalFunction
+	YvalMapping
 )

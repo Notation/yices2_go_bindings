@@ -1,13 +1,15 @@
 package yices2
 
-type Smt_status_t int32
+// SmtStatusT is the analog of smt_status_t defined in yices_types.h
+type SmtStatusT int32
 
+// These are the analogs to the elements of smt_status_t defined in yices_types.h
 const (
-	STATUS_IDLE Smt_status_t = iota
-	STATUS_SEARCHING
-	STATUS_UNKNOWN
-	STATUS_SAT
-	STATUS_UNSAT
-	STATUS_INTERRUPTED
-	STATUS_ERROR
+	StatusIdle SmtStatusT = iota
+	StatusSearching
+	StatusUnknown
+	StatusSat
+	StatusUnsat
+	StatusInterrupted
+	StatusError
 )
